@@ -20,24 +20,40 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
       <body
-        className="min-h-full flex flex-col text-zinc-100 bg-zinc-950"
+        className="min-h-full flex flex-col text-zinc-100"
         style={{
-          background: "radial-gradient(circle at center, #1a1a1f 0%, #09090b 100%)"
+          background:
+            "radial-gradient(circle at center, #1a1a1f 0%, #09090b 100%)",
         }}
       >
-        <header className="sticky top-0 z-50 bg-black/10 backdrop-blur-md border-b border-white/5">
-          <nav className="flex gap-6 px-6 py-4 text-pink-300">
-            <a href="#about" className="hover:text-pink-200 transition">About</a>
-            <a href="#projects" className="hover:text-pink-200 transition">Projects</a>
-            <a href="#contact" className="hover:text-pink-200 transition">Contact</a>
+        {/* HEADER */}
+        <header className="sticky top-0 z-50 bg-black/20 backdrop-blur-md border-b border-white/5">
+          <nav className="flex gap-6 px-6 py-4 text-pink-300 text-sm">
+            <a href="#about" className="hover:text-pink-200 transition">
+              About Me
+            </a>
+
+            <a href="#projects" className="hover:text-pink-200 transition">
+              Projects
+            </a>
+
+            <a href="#contact" className="hover:text-pink-200 transition">
+              Contact
+            </a>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              className="hover:text-pink-200 transition"
+            >
+              Resume
+            </a>
           </nav>
         </header>
 
         {children}
-
       </body>
     </html>
   );
