@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
               </a>
 
               <a
-                href="/resume.pdf"
+                href="/Resume.pdf"
                 target="_blank"
                 className="hover:text-pink-700 dark:hover:text-pink-200 transition"
               >
