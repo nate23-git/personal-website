@@ -30,13 +30,23 @@ export default function Home() {
               src="/images/graduation.jpg"
               alt="Graduation Photo"
               fill
+              loading="eager"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
           </div>
         </div>
 
-        <div className="h-64 rounded-2xl bg-zinc-100 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 flex items-center justify-center text-zinc-400 dark:text-zinc-500">
-          Future Photo
+        <div className="flex justify-center">
+          <div className="relative h-72 w-56 overflow-hidden rounded-3xl">
+            <Image
+              src="/images/selfie.jpg"
+              alt="Selfie"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
@@ -182,6 +192,7 @@ export default function Home() {
                   src="/images/cyber-sentinel.png"
                   alt="DoD Cyber Sentinel Skills Challenge Badge"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-contain"
                 />
               </div>
