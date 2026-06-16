@@ -167,14 +167,50 @@ export default function Home() {
 
         <div className="space-y-6">
 
+          {/* McAllen Crime Stoppers - Freelance Web Developer */}
+          <div className="rounded-3xl p-6 border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/40
+  transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01]
+  hover:border-pink-400/40 dark:hover:border-pink-300/40 hover:shadow-lg"
+          >
+
+            <h3 className="text-xl font-semibold text-pink-500 dark:text-pink-300">
+              Freelance Web Developer — McAllen Crime Stoppers
+            </h3>
+
+            <p className="mt-2 text-zinc-500 dark:text-zinc-400 text-sm">
+              Contract, In Progress
+            </p>
+
+            <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
+              Contracted to redesign and rebuild a nonprofit organization&apos;s WordPress website
+              after the previous build was left incomplete and largely non-functional.
+            </p>
+
+            <ul className="mt-4 list-disc pl-6 space-y-2 text-zinc-600 dark:text-zinc-300">
+              <li>
+                Redesigned and rebuilt the organization&apos;s WordPress website, improving functionality,
+                navigation, and visual design
+              </li>
+              <li>
+                Restored broken features including buttons, links, mobile scalability, and interactive
+                elements from the previous incomplete build
+              </li>
+              <li>
+                Collaborated directly with the organization to translate goals into design and
+                functionality improvements
+              </li>
+            </ul>
+
+          </div>
+
           {/* DoD Cyber Sentinel Skills Challenge (CLICKABLE CARD) */}
-          <a
-            href="https://www.credential.net/009462ec-46b9-4285-a894-9903716750cf#acc.AQKClcPf"
+
+          <a href="https://www.credential.net/009462ec-46b9-4285-a894-9903716750cf#acc.AQKClcPf"
             target="_blank"
             rel="noopener noreferrer"
             className="block rounded-3xl p-6 border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/40
-    transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01]
-    hover:border-pink-400/40 dark:hover:border-pink-300/40 hover:shadow-lg"
+  transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01]
+  hover:border-pink-400/40 dark:hover:border-pink-300/40 hover:shadow-lg"
           >
 
             <h3 className="text-xl font-semibold text-pink-500 dark:text-pink-300">
@@ -236,7 +272,6 @@ export default function Home() {
 
         </div>
       </section>
-
       {/* CONTACT INFO */}
       <section id="contact" className="mt-32 pb-20">
 
