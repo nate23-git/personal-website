@@ -49,6 +49,13 @@ export default function RootLayout({ children }) {
               </a>
 
               <a
+                href="/#experience"
+                className="hover:text-pink-700 dark:hover:text-pink-200 transition"
+              >
+                Experience
+              </a>
+
+              <a
                 href="/#contact"
                 className="hover:text-pink-700 dark:hover:text-pink-200 transition"
               >

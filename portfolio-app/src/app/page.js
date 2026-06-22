@@ -11,11 +11,6 @@ export default function Home() {
           Nathan Perez
         </h1>
 
-        {/* Title badge */}
-        <div className="mt-4 px-4 py-2 rounded-full bg-pink-500/10 border border-pink-400/40 dark:border-pink-300/30 text-pink-500 dark:text-pink-300">
-          Data Analyst
-        </div>
-
         {/* short intro */}
         <p className="mt-6 text-zinc-600 dark:text-zinc-300 max-w-xl">
           Hi, I'm Nathan! I'm a recent Computer Science graduate with a strong interest in data analysis.
@@ -71,10 +66,6 @@ export default function Home() {
           help people make more informed decisions
         </p>
 
-        <p className="mt-4 text-zinc-600 dark:text-zinc-300 leading-relaxed">
-          Outside of tech, I enjoy trying new things, spending time with friends and family, and
-          growing my plushie collection - especially my emoji pillows 😅.
-        </p>
       </section>
 
       {/* PROJECTS SECTION */}
@@ -159,7 +150,7 @@ export default function Home() {
       </section>
 
       {/* EXPERIENCE SECTION */}
-      <section className="mt-16">
+      <section id="experience" className="mt-16">
 
         <h2 className="text-3xl font-bold text-pink-500 dark:text-pink-300 mb-10">
           Experience
@@ -168,13 +159,14 @@ export default function Home() {
         <div className="space-y-6">
 
           {/* McAllen Crime Stoppers - Freelance Web Developer */}
-          <div className="rounded-3xl p-6 border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/40
+          <Link href="/experience/crime-stoppers"
+            className="block rounded-3xl p-6 border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/40
   transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01]
   hover:border-pink-400/40 dark:hover:border-pink-300/40 hover:shadow-lg"
           >
 
             <h3 className="text-xl font-semibold text-pink-500 dark:text-pink-300">
-              Freelance Web Developer — McAllen Crime Stoppers
+              Freelance Web Developer — McAllen Crime Stoppers (2026)
             </h3>
 
             <p className="mt-2 text-zinc-500 dark:text-zinc-400 text-sm">
@@ -192,6 +184,10 @@ export default function Home() {
                 navigation, and visual design
               </li>
               <li>
+                Led a full website migration to a new hosting server, managed DNS, SSL, and WordPress setup with zero data
+                loss
+              </li>
+              <li>
                 Restored broken features including buttons, links, mobile scalability, and interactive
                 elements from the previous incomplete build
               </li>
@@ -201,7 +197,7 @@ export default function Home() {
               </li>
             </ul>
 
-          </div>
+          </Link>
 
           {/* DoD Cyber Sentinel Skills Challenge (CLICKABLE CARD) */}
 
